@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Axiom Pulse – Token Discovery Table
 
-## Getting Started
+A frontend-focused implementation of a real-time token discovery table inspired by Axiom Trade’s Pulse interface.
 
-First, run the development server:
+The goal of this project is to demonstrate clean UI architecture, smooth real-time updates, and production-ready frontend patterns commonly used in trading and data-heavy applications.
 
-```bash
+---
+
+##  Features
+
+- Real-time price updates (WebSocket-style mock)
+- Visual price movement feedback (color + glow)
+- Market category tabs (Pulse, New Pairs, Final Stretch, Migrated)
+- Sorting by price
+- Contextual actions using popovers
+- Token detail view using accessible modal
+- Skeleton loading states
+- Fully responsive layout (320px and above)
+- Optimized rendering with memoized components
+
+---
+
+##  Tech Stack
+
+- **Next.js 14** (App Router)
+- **TypeScript** (strict mode)
+- **Tailwind CSS**
+- **Radix UI** (Popover, Dialog)
+- **Atomic component architecture**
+
+---
+
+##  Performance & UX
+
+- No layout shifts
+- Lightweight animations only where useful
+- Memoized rows to avoid unnecessary re-renders
+- Fast interactions (<100ms perceived latency)
+- Designed to score **90+ on Lighthouse** (mobile & desktop)
+
+---
+
+##  Notes
+
+This project intentionally prioritizes clarity, performance, and usability over heavy visual effects, closely matching real-world trading interfaces where data readability and responsiveness are critical.
+
+---
+
+##  How to run locally
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
