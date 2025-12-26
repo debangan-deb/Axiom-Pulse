@@ -11,7 +11,6 @@ The goal of this project is to demonstrate clean UI architecture, smooth real-ti
 - Real-time price updates (WebSocket-style mock)
 - Visual price movement feedback (color + glow)
 - Market category tabs (Pulse, New Pairs, Final Stretch, Migrated)
-- Sorting by price
 - Contextual actions using popovers
 - Token detail view using accessible modal
 - Skeleton loading states
